@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la)",
+      "Bash(docker --version)",
+      "Bash(python -c \"import fastapi, uvicorn, multipart; print\\('fastapi+uvicorn+multipart OK'\\)\")",
+      "Bash(python -c \"import main; print\\('app routes:', [r.path for r in main.app.routes if hasattr\\(r,'path'\\)]\\)\")",
+      "Bash(python -m uvicorn --version)",
+      "Bash(python -c \"import importlib,main; importlib.reload\\(main\\); print\\('OK'\\)\")",
+      "Bash(npx eslint *)",
+      "Bash(echo \"exit: $?\")"
+    ]
+  }
+}
